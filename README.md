@@ -31,6 +31,21 @@ Implemented configurations:
 - IP addressing and default gateway configuration
 - Connectivity verification between network devices
 
+### IP Addressing Plan
+
+| Device | Interface | IP Address | Subnet Mask | Gateway |
+|---|---|---|---|
+| PC1 | NIC | 192.168.10.10 | /24 | 192.168.10.1 |
+| PC2 | NIC | 192.168.10.11 | /24 | 192.168.10.1 |
+| R1 | G0/0.10 | 192.168.10.1 | /24 | — |
+| R1 | G0/0.20 | 192.168.20.1 | /24 | — |
+| R1 | G0/1 | 10.0.0.1 | /30 | — |
+| R2 | G0/0 | 10.0.0.2 | /30 | — |
+| R2 | G0/1 | 192.168.30.1 | /24 | — |
+| PC3 | NIC | 192.168.30.10 | /24 | 192.168.30.1 |
+
+**Note:** VLAN 10 uses the 192.168.10.0/24 subnet, VLAN 20 uses 192.168.20.0/24, and the R1–R2 point-to-point link uses 10.0.0.0/30.
+
 ### Linux Monitoring Environment
 
 Zabbix Server and Agent 2 are deployed on Ubuntu Server running in VMware.
