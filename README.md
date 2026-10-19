@@ -60,7 +60,6 @@ Monitoring activities:
 | `topology/` | Packet Tracer network topology file |
 | `configs/` | Cisco device configurations |
 | `screenshots/` | Network, monitoring, and alerting screenshots |
-| `docs/incident-report.md` | Sample troubleshooting and incident record |
 
 ## 6. Skills Demonstrated
 
